@@ -109,7 +109,7 @@ public class LoginPage extends JFrame {
                                 JOptionPane.showMessageDialog(null, "All information required");
                             } else {
                                 try {
-                                    Integer.parseInt(mobile);
+                                    Long.parseLong(mobile);
                                     Integer.parseInt(roomNum);
                                     Long.parseLong(card);
                                     file = new File("Single Beds/" + roomNum + ".txt");
@@ -176,7 +176,7 @@ public class LoginPage extends JFrame {
                                 JOptionPane.showMessageDialog(null, "All information required");
                             } else {
                                 try {
-                                    Integer.parseInt(mobile);
+                                    Long.parseLong(mobile);
                                     Integer.parseInt(roomNum);
                                     Long.parseLong(card);
                                     file = new File("Double Beds/" + roomNum + ".txt");
